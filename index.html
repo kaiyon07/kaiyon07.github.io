@@ -79,19 +79,21 @@ img {
                         <div class="content">    
                                                
                             <div class="item featured text-center">
-                                <h3 class="title"><a href="#" target="_blank">Neural Style Transfer</a></h3>
-                                <p class="summary">A Generative Adversarial Network to transfer the texture of a image into other.</p>
+                                <h3 class="title"><a href="#" target="_blank">Super Resolution GANs</a></h3>
+                                <p class="summary">A Generative Adversarial Network to produce high qualtiy image from a low resolution image.</p>
                                 <div class="featured-image has-ribbon">
                                     <a href="#" target="_blank">
-                                    <img class="img-fluid project-image" src="yo.jpeg" alt="project name" />
+                                    <img class="img-fluid project-image" src="super_resolution.PNG" alt="project name" />
                                     </a>
+                                    <!--
                                     <div class="ribbon">
                                         <div class="text">Magic</div>
                                     </div>
+                                    -->
                                 </div>
                                     
                                 <div class="desc text-left">                                    
-                                    <p>Building a GAN which could do something as above. We remove the fully connected layer of a pretrained model and use the intermediate CNN layers which is able to learn the feature of image. The key to style tranfer is to minimize the loss between the generated image with respect to content and style of the image.</p>
+                                    <p>Super-resolution GAN applies a deep network in combination with an adversary network to produce higher resolution images. As shown above, SRGAN is more appealing to a human with more details compared with the similar design without GAN (SRResNet). During the training, A high-resolution image (HR) is downsampled to a low-resolution image (LR). A GAN generator upsamples LR images to super-resolution images (SR). We use a discriminator to distinguish the HR images and backpropagate the GAN loss to train the discriminator and the generator.</p>
                                 </div><!--//desc-->         
                                 <a class="btn btn-cta-secondary" href="#" target="_blank"><i class="fas fa-thumbs-up"></i> Back my project</a>
                                 <!--                 
